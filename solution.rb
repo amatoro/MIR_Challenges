@@ -12,16 +12,16 @@ require 'sinatra'
 # end
 
 get '/makers/' do
-  "<h1>Hola desconocido!</h1>" #Diferencia aquí entre usar caputalize con o sin !
+  "<h1>Hola desconocido!</h1>" 
 end
 
 
 get '/makers/:nombre' do
-  "<h1>Hola #{params['nombre'].capitalize}!</h1>" #Diferencia aquí entre usar caputalize con o sin !
+  "<h1>Hola #{params['nombre'].capitalize}!</h1>" 
 end
 
 get '/' do 
-  erb :home
+  "HcUy6Re2LLBRtj"
 
   # <<- HTML #Headdoc? - string muy largo
   # HTML
@@ -30,3 +30,5 @@ end
 post '/hola' do
   "¡Hola #{params['nombre']}!"
 end
+
+
