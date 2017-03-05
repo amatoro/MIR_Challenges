@@ -17,9 +17,19 @@ post '/answer' do
 
   "¡Hola #{params['userinput']}!"
 
-  if user_input == user_input.upcase && params['userinput'] != ""
+  if user_input == user_input.upcase && user_input != ""
     "<h1>Ahhh si, manzanas!</h1>"
   else
     "<h1>Habla más duro mijito</h1>"
   end
 end
+
+#MIR Way
+# post '/grandma' do
+#   if params[:user_input] == params[:user_input].upcase
+#     @grandma = "Ahhh si, manzanas!"
+#   else
+#     @grandma = "Habla más duro mijito"
+#   end
+#   redirect "/?grandma=#{@grandma}"
+# end
